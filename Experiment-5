@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Image Example</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f4f4f4;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            box-shadow: 0 0 10px gray;
+        }
+
+        img {
+            margin: 10px;
+            border: 3px solid #555;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>HTML Image Tag Example</h1>
+
+<div class="box">
+    <h3>1. Normal Image</h3>
+    <img src="image1.jpg" alt="Sample Image" width="300">
+</div>
+
+<div class="box">
+    <h3>2. Image with Height and Width</h3>
+    <img src="image2.jpg" alt="Image Example" width="200" height="150">
+</div>
+
+<div class="box">
+    <h3>3. Image with Border</h3>
+    <img src="image3.jpg" alt="Border Image" width="250">
+</div>
+
+<div class="box">
+    <h3>4. Clickable Image (Link)</h3>
+    <a href="https://www.google.com" target="_blank">
+        <img src="image4.jpg" alt="Clickable Image" width="200">
+    </a>
+</div>
+
+<div class="box">
+    <h3>5. Image with Title Tooltip</h3>
+    <img src="image5.jpg" alt="Tooltip Image" title="This is an image" width="250">
+</div>
+
+</body>
+</html>
