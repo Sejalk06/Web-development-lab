@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .form-box {
+            width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        .gender, .skills {
+            width: auto;
+        }
+
+        button {
+            padding: 10px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 48%;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Employee Registration Form</h1>
+
+<div class="form-box">
+<form>
+
+    <!-- Personal Details -->
+    <label>Full Name:</label>
+    <input type="text" placeholder="Enter full name" required>
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter email" required>
+
+    <label>Password:</label>
+    <input type="password" required>
+
+    <label>Contact Number:</label>
+    <input type="tel" placeholder="Enter mobile number">
+
+    <label>Date of Birth:</label>
+    <input type="date">
+
+    <!-- Gender -->
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" class="gender"> Male
+    <input type="radio" name="gender" class="gender"> Female
+    <input type="radio" name="gender" class="gender"> Other
+    <br><br>
+
+    <!-- Department -->
+    <label>Department:</label>
+    <select>
+        <option>HR</option>
+        <option>IT</option>
+        <option>Finance</option>
+        <option>Marketing</option>
+    </select>
+
+    <!-- Skills -->
+    <label>Skills:</label><br>
+    <input type="checkbox" class="skills"> Java
+    <input type="checkbox" class="skills"> Python
+    <input type="checkbox" class="skills"> HTML
+    <input type="checkbox" class="skills"> CSS
+    <br><br>
+
+    <!-- Address -->
+    <label>Address:</label>
+    <textarea rows="3"></textarea>
+
+    <!-- Upload -->
+    <label>Upload Resume:</label>
+    <input type="file">
+
+    <!-- Buttons -->
+    <br><br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+</div>
+
+</body>
+</html>
