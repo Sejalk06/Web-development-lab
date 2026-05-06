@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+
+<!DOCTYPE students SYSTEM "student.dtd">
+
+<students>
+    <student>
+        <name>Sejal Kumbhar</name>
+        <roll>101</roll>
+        <course>BCA</course>
+        <city>Pune</city>
+    </student>
+
+    <student>
+        <name>Rahul Patil</name>
+        <roll>102</roll>
+        <course>BSc IT</course>
+        <city>Kolhapur</city>
+    </student>
+
+    <student>
+        <name>Priya Sharma</name>
+        <roll>103</roll>
+        <course>BBA</course>
+        <city>Mumbai</city>
+    </student>
+</students>
