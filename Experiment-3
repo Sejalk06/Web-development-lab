@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML List Tags</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 0 10px gray;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>HTML List Tags</h1>
+
+<div class="box">
+    <h3>1. Ordered List (Numbered)</h3>
+    <ol>
+        <li>Java</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ol>
+</div>
+
+<div class="box">
+    <h3>2. Ordered List with Type</h3>
+    <ol type="A">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+    </ol>
+</div>
+
+<div class="box">
+    <h3>3. Unordered List (Bullets)</h3>
+    <ul>
+        <li>Cricket</li>
+        <li>Football</li>
+        <li>Hockey</li>
+    </ul>
+</div>
+
+<div class="box">
+    <h3>4. Unordered List with Style</h3>
+    <ul type="square">
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Green</li>
+    </ul>
+</div>
+
+<div class="box">
+    <h3>5. Description List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Used to create web pages</dd>
+
+        <dt>CSS</dt>
+        <dd>Used for styling web pages</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Used for interactivity</dd>
+    </dl>
+</div>
+
+<div class="box">
+    <h3>6. Nested List</h3>
+    <ul>
+        <li>Programming Languages
+            <ol>
+                <li>Java</li>
+                <li>Python</li>
+            </ol>
+        </li>
+        <li>Web Technologies
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
