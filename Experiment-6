@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Frames Example</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container {
+            display: flex;
+            height: 90vh;
+        }
+
+        .left {
+            width: 30%;
+            background: #ecf0f1;
+            padding: 20px;
+        }
+
+        .right {
+            width: 70%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>HTML Frames using Iframe</h1>
+</header>
+
+<div class="container">
+
+    <!-- Left Side (Menu) -->
+    <div class="left">
+        <h3>Menu</h3>
+        <a href="https://www.wikipedia.org" target="frame">Wikipedia</a>
+        <a href="https://www.google.com" target="frame">Google</a>
+        <a href="https://www.github.com" target="frame">GitHub</a>
+    </div>
+
+    <!-- Right Side (Frame Content) -->
+    <div class="right">
+        <iframe name="frame" src="https://www.wikipedia.org"></iframe>
+    </div>
+
+</div>
+
+</body>
+</html>
