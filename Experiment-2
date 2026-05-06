@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Formatting Tags</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 0 10px gray;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>HTML Text Formatting Tags</h1>
+
+<div class="box">
+    <h3>Bold and Strong</h3>
+    <p><b>This is bold text using &lt;b&gt; tag</b></p>
+    <p><strong>This is important text using &lt;strong&gt; tag</strong></p>
+</div>
+
+<div class="box">
+    <h3>Italic and Emphasis</h3>
+    <p><i>This is italic text using &lt;i&gt; tag</i></p>
+    <p><em>This is emphasized text using &lt;em&gt; tag</em></p>
+</div>
+
+<div class="box">
+    <h3>Underline and Mark</h3>
+    <p><u>This is underlined text using &lt;u&gt; tag</u></p>
+    <p><mark>This text is highlighted using &lt;mark&gt; tag</mark></p>
+</div>
+
+<div class="box">
+    <h3>Small and Big</h3>
+    <p><small>This is small text using &lt;small&gt; tag</small></p>
+    <p><big>This is big text using &lt;big&gt; tag</big></p>
+</div>
+
+<div class="box">
+    <h3>Deleted and Inserted</h3>
+    <p><del>This text is deleted using &lt;del&gt; tag</del></p>
+    <p><ins>This text is inserted using &lt;ins&gt; tag</ins></p>
+</div>
+
+<div class="box">
+    <h3>Subscript and Superscript</h3>
+    <p>H<sub>2</sub>O (Subscript using &lt;sub&gt;)</p>
+    <p>10<sup>2</sup> = 100 (Superscript using &lt;sup&gt;)</p>
+</div>
+
+<div class="box">
+    <h3>Code and Preformatted</h3>
+    <p><code>This is code text using &lt;code&gt; tag</code></p>
+    <pre>
+This is preformatted text
+using &lt;pre&gt; tag
+spaces and line breaks are preserved
+    </pre>
+</div>
+
+<div class="box">
+    <h3>Quotation and Citation</h3>
+    <p><q>This is short quotation using &lt;q&gt; tag</q></p>
+    <p><blockquote>This is blockquote text using &lt;blockquote&gt; tag</blockquote></p>
+    <p><cite>This is citation using &lt;cite&gt; tag</cite></p>
+</div>
+
+<div class="box">
+    <h3>Abbreviation</h3>
+    <p><abbr title="Hyper Text Markup Language">HTML</abbr> is used for web pages.</p>
+</div>
+
+<div class="box">
+    <h3>Address</h3>
+    <address>
+        Written by Student<br>
+        Email: student@example.com
+    </address>
+</div>
+
+</body>
+</html>
