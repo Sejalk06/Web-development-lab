@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Application using XSLT</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(to right, #74ebd5, #ACB6E5);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
+
+        .container{
+            width:90%;
+            max-width:1000px;
+            background:white;
+            border-radius:15px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+            padding:30px;
+        }
+
+        h1{
+            text-align:center;
+            color:#2c3e50;
+            margin-bottom:10px;
+        }
+
+        p{
+            text-align:center;
+            color:#555;
+            margin-bottom:25px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            overflow:hidden;
+            border-radius:10px;
+        }
+
+        th{
+            background:#2c3e50;
+            color:white;
+            padding:15px;
+            font-size:18px;
+        }
+
+        td{
+            padding:14px;
+            text-align:center;
+            border-bottom:1px solid #ddd;
+        }
+
+        tr:nth-child(even){
+            background:#f4f4f4;
+        }
+
+        tr:hover{
+            background:#dff9fb;
+            transition:0.3s;
+        }
+
+        .pass{
+            color:green;
+            font-weight:bold;
+        }
+
+        .fail{
+            color:red;
+            font-weight:bold;
+        }
+
+        .gradeA{
+            color:green;
+            font-weight:bold;
+        }
+
+        .gradeB{
+            color:orange;
+            font-weight:bold;
+        }
+
+        .gradeC{
+            color:#3498db;
+            font-weight:bold;
+        }
+
+        .gradeD{
+            color:red;
+            font-weight:bold;
+        }
+
+        footer{
+            text-align:center;
+            margin-top:20px;
+            color:#666;
+            font-size:14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Application using XSLT & Conditional Statement</h1>
+
+        <p>
+            Student Information Management System
+        </p>
+
+        <table>
+
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Course</th>
+                <th>Marks</th>
+                <th>Result</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr>
+                <td>Rahul Patil</td>
+                <td>101</td>
+                <td>BCA</td>
+                <td>85</td>
+                <td class="pass">PASS</td>
+                <td class="gradeA">A Grade</td>
+            </tr>
+
+            <tr>
+                <td>Priya Sharma</td>
+                <td>102</td>
+                <td>BSc IT</td>
+                <td>65</td>
+                <td class="pass">PASS</td>
+                <td class="gradeB">B Grade</td>
+            </tr>
+
+            <tr>
+                <td>Amit Joshi</td>
+                <td>103</td>
+                <td>BBA</td>
+                <td>45</td>
+                <td class="fail">FAIL</td>
+                <td class="gradeD">D Grade</td>
+            </tr>
+
+            <tr>
+                <td>Sneha Kulkarni</td>
+                <td>104</td>
+                <td>BCom</td>
+                <td>58</td>
+                <td class="pass">PASS</td>
+                <td class="gradeC">C Grade</td>
+            </tr>
+
+        </table>
+
+        <footer>
+            © 2026 Student Application Project | XML + XSLT Implementation
+        </footer>
+
+    </div>
+
+</body>
+</html>
