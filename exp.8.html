@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experiment - List Tags in HTML</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#7c3aed,#2563eb,#06b6d4);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+        }
+
+        .container{
+            width:80%;
+            max-width:800px;
+            background:rgba(255,255,255,0.1);
+            padding:40px;
+            border-radius:20px;
+            backdrop-filter:blur(10px);
+            box-shadow:0 0 25px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:30px;
+            font-size:40px;
+        }
+
+        .list-box{
+            background:rgba(255,255,255,0.08);
+            padding:25px;
+            border-radius:15px;
+            margin-bottom:25px;
+        }
+
+        h2{
+            margin-bottom:15px;
+            color:#fff;
+        }
+
+        ol,ul,dl{
+            margin-left:25px;
+            font-size:18px;
+            line-height:2;
+        }
+
+        dt{
+            font-weight:bold;
+            color:#fff;
+        }
+
+        dd{
+            margin-left:20px;
+            margin-bottom:10px;
+        }
+
+        .btn{
+            text-decoration:none;
+            display:inline-block;
+            margin-top:20px;
+            background:white;
+            color:#2563eb;
+            padding:12px 25px;
+            border-radius:30px;
+            font-weight:bold;
+        }
+
+        .btn:hover{
+            background:#0f172a;
+            color:white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📋 Demonstration of List Tags in HTML</h1>
+
+    <div class="list-box">
+
+        <h2>1. Ordered List</h2>
+
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>XML</li>
+        </ol>
+
+    </div>
+
+    <div class="list-box">
+
+        <h2>2. Unordered List</h2>
+
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Orange</li>
+        </ul>
+
+    </div>
+
+    <div class="list-box">
+
+        <h2>3. Description List</h2>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>Used to create web pages.</dd>
+
+            <dt>CSS</dt>
+            <dd>Used for styling web pages.</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Used to add interactivity.</dd>
+        </dl>
+
+    </div>
+
+    <a href="index.html" class="btn">⬅ Back to Home</a>
+
+</div>
+
+</body>
+</html>
