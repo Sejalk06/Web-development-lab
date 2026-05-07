@@ -1,9 +1,9 @@
-<!-- ======================= index.html ======================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Web Development Lab Portal</title>
 
 <style>
@@ -16,26 +16,33 @@
 }
 
 body{
-    background:linear-gradient(135deg,#0f172a,#1e3a8a,#0f172a);
     min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1d4ed8,#7c3aed,#06b6d4);
+    background-size:400% 400%;
+    animation:bg 10s infinite alternate;
     color:white;
+}
+
+@keyframes bg{
+    0%{background-position:left;}
+    100%{background-position:right;}
 }
 
 header{
     text-align:center;
-    padding:40px;
+    padding:40px 20px;
 }
 
 header h1{
     font-size:50px;
-    color:#38bdf8;
+    color:#fff;
     text-shadow:0 0 20px #38bdf8;
 }
 
 header p{
     margin-top:10px;
-    font-size:18px;
-    color:#cbd5e1;
+    font-size:20px;
+    color:#e2e8f0;
 }
 
 .container{
@@ -48,47 +55,55 @@ header p{
 }
 
 .card{
-    background:rgba(255,255,255,0.1);
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(10px);
     border-radius:20px;
     padding:30px;
     text-align:center;
-    backdrop-filter:blur(10px);
     transition:0.4s;
     border:1px solid rgba(255,255,255,0.1);
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
 }
 
 .card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-10px) scale(1.03);
     box-shadow:0 0 25px #38bdf8;
 }
 
 .card h2{
     margin-bottom:15px;
-    color:#38bdf8;
+    font-size:24px;
+    color:#fff;
 }
 
 .card p{
-    margin-bottom:20px;
     color:#e2e8f0;
+    margin-bottom:20px;
+    line-height:1.6;
 }
 
 .btn{
+    display:inline-block;
     text-decoration:none;
     color:white;
-    background:linear-gradient(45deg,#06b6d4,#2563eb);
+    background:linear-gradient(45deg,#2563eb,#06b6d4);
     padding:12px 25px;
     border-radius:30px;
-    display:inline-block;
+    font-weight:bold;
+    transition:0.3s;
 }
 
 .btn:hover{
-    background:linear-gradient(45deg,#2563eb,#06b6d4);
+    background:linear-gradient(45deg,#06b6d4,#2563eb);
+    transform:scale(1.05);
 }
 
 footer{
     text-align:center;
     padding:20px;
     background:rgba(255,255,255,0.08);
+    color:#e2e8f0;
+    margin-top:20px;
 }
 
 </style>
@@ -97,94 +112,100 @@ footer{
 <body>
 
 <header>
-    <h1>WEB DEVELOPMENT LAB PORTAL</h1>
-    <p>Premium HTML • XML • XSLT Experiments</p>
+    <h1>🌐 WEB DEVELOPMENT LAB PORTAL</h1>
+    <p>Interactive HTML • XML • XSLT Experiments</p>
 </header>
 
 <div class="container">
 
-<div class="card">
-<h2>📘 Experiment 1</h2>
-<p>Study of Web Technology Basics</p>
-<a href="exp1.html" class="btn">Open</a>
-</div>
+    <div class="card">
+        <h2>📘 Experiment 1</h2>
+        <p>Study of Web Technology Basics</p>
+        <a href="exp1.html" class="btn">Open</a>
+    </div>
 
-<div class="card">
-<h2>🌐 Experiment 2</h2>
-<p>Create Static Web Pages using HTML</p>
-<a href="exp2.html" class="btn">Open</a>
-</div>
+    <div class="card">
+        <h2>🌍 Experiment 2</h2>
+        <p>Create Static Web Pages using HTML</p>
+        <a href="exp2.html" class="btn">Open</a>
+    </div>
 
-<div class="card">
-<h2>📋 Experiment 3</h2>
-<p>Use of List Tags in HTML</p>
-<a href="exp3.html" class="btn">Open</a>
-</div>
+    <div class="card">
+        <h2>📋 Experiment 3</h2>
+        <p>Use of List Tags in HTML</p>
+        <a href="exp3.html" class="btn">Open</a>
+    </div>
 
-<div class="card">
-<h2>🖼️ Experiment 4</h2>
-<p>Insert Images using HTML</p>
-<a href="exp4.html" class="btn">Open</a>
-</div>
+    <div class="card">
+        <h2>🖼️ Experiment 4</h2>
+        <p>Insert Images using HTML Tags</p>
+        <a href="exp4.html" class="btn">Open</a>
+    </div>
 
-<div class="card">
-<h2>🧩 Experiment 5</h2>
-<p>Create Frames using HTML</p>
-<a href="exp5.html" class="btn">Open</a>
-</div>
+    <div class="card">
+        <h2>🧩 Experiment 5</h2>
+        <p>Create Frames using HTML</p>
+        <a href="exp5.html" class="btn">Open</a>
+    </div>
 
-<div class="card">
-<h2>🔗 Experiment 6</h2>
-<p>Use of Hyperlinks in HTML</p>
-<a href="exp6.html" class="btn">Open</a>
-</div>
+    <div class="card">
+        <h2>🔗 Experiment 6</h2>
+        <p>Demonstrate Link Tags in HTML</p>
+        <a href="exp6.html" class="btn">Open</a>
+    </div>
 
-<div class="card">
-<h2>📑 Experiment 7</h2>
-<p>List Demonstration in HTML</p>
-<a href="exp7.html" class="btn">Open</a>
-</div>
+    <div class="card">
+        <h2>📑 Experiment 7</h2>
+        <p>Demonstrate List Tags in HTML</p>
+        <a href="exp7.html" class="btn">Open</a>
+    </div>
 
-<div class="card">
-<h2>📝 Experiment 8</h2>
-<p>Employee Registration Form</p>
-<a href="exp8.html" class="btn">Open</a>
-</div>
+    <div class="card">
+        <h2>📝 Experiment 8</h2>
+        <p>Employee Registration Form</p>
+        <a href="exp8.html" class="btn">Open</a>
+    </div>
 
-<div class="card">
-<h2>👨‍💼 Experiment 9</h2>
-<p>Resume Webpage</p>
-<a href="exp9.html" class="btn">Open</a>
-</div>
+    <div class="card">
+        <h2>👨‍💼 Experiment 9</h2>
+        <p>Resume Webpage using HTML</p>
+        <a href="exp9.html" class="btn">Open</a>
+    </div>
 
-<div class="card">
-<h2>📂 Experiment 10</h2>
-<p>Study & Implementation of XML</p>
-<a href="exp10.html" class="btn">Open</a>
-</div>
+    <div class="card">
+        <h2>📂 Experiment 10</h2>
+        <p>Study and Implementation of XML</p>
+        <a href="exp10.html" class="btn">Open</a>
+    </div>
 
-<div class="card">
-<h2>⚡ Experiment 11</h2>
-<p>XSLT Transformation</p>
-<a href="exp11.html" class="btn">Open</a>
-</div>
+    <div class="card">
+        <h2>⚡ Experiment 11</h2>
+        <p>XSLT Transformation of XML</p>
+        <a href="exp11.html" class="btn">Open</a>
+    </div>
 
-<div class="card">
-<h2>🎓 Experiment 12</h2>
-<p>Student Application using XSLT</p>
-<a href="exp12.html" class="btn">Open</a>
-</div>
+    <div class="card">
+        <h2>🎓 Experiment 12</h2>
+        <p>Student Application using XSLT</p>
+        <a href="exp12.html" class="btn">Open</a>
+    </div>
 
-<div class="card">
-<h2>🚀 Experiment 13</h2>
-<p>XSLT Conditional Statement</p>
-<a href="exp13.html" class="btn">Open</a>
-</div>
+    <div class="card">
+        <h2>🚀 Experiment 13</h2>
+        <p>XSLT with Conditional Statement</p>
+        <a href="exp13.html" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+        <h2>🏠 Main Index File</h2>
+        <p>Open Main Homepage of Project</p>
+        <a href="index.html" class="btn">Open</a>
+    </div>
 
 </div>
 
 <footer>
-Developed by Sejal Kumbhar
+    Developed by Sejal Kumbhar | Web Development Lab Project
 </footer>
 
 </body>
