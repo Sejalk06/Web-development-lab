@@ -1,114 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Employee Registration Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sejal Kumbhar Resume</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            background: #f4f4f4;
-        }
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
 
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-        }
+    body{
+      background:#f4f7fb;
+      padding:40px;
+      color:#333;
+    }
 
-        .form-box {
-            width: 500px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px gray;
-        }
+    .resume{
+      max-width:900px;
+      margin:auto;
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    }
 
-        label {
-            font-weight: bold;
-        }
+    .header{
+      background:linear-gradient(135deg,#4a00e0,#8e2de2);
+      color:white;
+      padding:40px;
+      text-align:center;
+    }
 
-        input, select, textarea {
-            width: 100%;
-            padding: 8px;
-            margin: 8px 0;
-        }
+    .header h1{
+      font-size:42px;
+      margin-bottom:10px;
+    }
 
-        .gender, .skills {
-            width: auto;
-        }
+    .header p{
+      font-size:18px;
+      opacity:0.9;
+    }
 
-        button {
-            padding: 10px;
-            background: #2c3e50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            width: 48%;
-        }
-    </style>
+    .content{
+      display:flex;
+      flex-wrap:wrap;
+    }
+
+    .left{
+      width:35%;
+      background:#f0f3ff;
+      padding:30px;
+    }
+
+    .right{
+      width:65%;
+      padding:30px;
+    }
+
+    h2{
+      color:#4a00e0;
+      margin-bottom:15px;
+      border-bottom:2px solid #4a00e0;
+      padding-bottom:5px;
+      font-size:22px;
+    }
+
+    .section{
+      margin-bottom:30px;
+    }
+
+    .contact p,
+    .skills li,
+    .about p,
+    .education p{
+      margin-bottom:10px;
+      line-height:1.6;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    .skills li{
+      margin-bottom:8px;
+    }
+
+    .tag{
+      display:inline-block;
+      background:#4a00e0;
+      color:white;
+      padding:8px 14px;
+      margin:5px;
+      border-radius:20px;
+      font-size:14px;
+    }
+
+    .footer{
+      text-align:center;
+      padding:20px;
+      background:#f7f7f7;
+      font-size:14px;
+      color:#666;
+    }
+
+    @media(max-width:768px){
+      .left,
+      .right{
+        width:100%;
+      }
+
+      .header h1{
+        font-size:32px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>Employee Registration Form</h1>
+  <div class="resume">
 
-<div class="form-box">
-<form>
+    <div class="header">
+      <h1>Sejal Shivaji Kumbhar</h1>
+      <p>B.Tech Computer Science Engineering Student</p>
+    </div>
 
-    <!-- Personal Details -->
-    <label>Full Name:</label>
-    <input type="text" placeholder="Enter full name" required>
+    <div class="content">
 
-    <label>Email:</label>
-    <input type="email" placeholder="Enter email" required>
+      <!-- LEFT SECTION -->
+      <div class="left">
 
-    <label>Password:</label>
-    <input type="password" required>
+        <div class="section contact">
+          <h2>Contact</h2>
 
-    <label>Contact Number:</label>
-    <input type="tel" placeholder="Enter mobile number">
+          <p><strong>Phone:</strong><br> 8432909494</p>
 
-    <label>Date of Birth:</label>
-    <input type="date">
+          <p><strong>Email:</strong><br>
+          sejalkumbhar9@gmail.com</p>
 
-    <!-- Gender -->
-    <label>Gender:</label><br>
-    <input type="radio" name="gender" class="gender"> Male
-    <input type="radio" name="gender" class="gender"> Female
-    <input type="radio" name="gender" class="gender"> Other
-    <br><br>
+          <p><strong>Location:</strong><br>
+          Maharashtra, India</p>
+        </div>
 
-    <!-- Department -->
-    <label>Department:</label>
-    <select>
-        <option>HR</option>
-        <option>IT</option>
-        <option>Finance</option>
-        <option>Marketing</option>
-    </select>
+        <div class="section">
+          <h2>Skills</h2>
 
-    <!-- Skills -->
-    <label>Skills:</label><br>
-    <input type="checkbox" class="skills"> Java
-    <input type="checkbox" class="skills"> Python
-    <input type="checkbox" class="skills"> HTML
-    <input type="checkbox" class="skills"> CSS
-    <br><br>
+          <div class="tag">HTML</div>
+          <div class="tag">CSS</div>
+          <div class="tag">JavaScript</div>
+          <div class="tag">C</div>
+          <div class="tag">C++</div>
+          <div class="tag">Node.js</div>
+        </div>
 
-    <!-- Address -->
-    <label>Address:</label>
-    <textarea rows="3"></textarea>
+      </div>
 
-    <!-- Upload -->
-    <label>Upload Resume:</label>
-    <input type="file">
+      <!-- RIGHT SECTION -->
+      <div class="right">
 
-    <!-- Buttons -->
-    <br><br>
-    <button type="submit">Submit</button>
-    <button type="reset">Reset</button>
+        <div class="section about">
+          <h2>About Me</h2>
 
-</form>
-</div>
+          <p>
+            I am Sejal Shivaji Kumbhar, currently pursuing
+            Second Year B.Tech in Computer Science Engineering.
+            I am passionate about web development and programming.
+            I enjoy creating modern and responsive websites and
+            continuously learning new technologies to improve my
+            technical skills.
+          </p>
+
+          <p>
+            I am a quick learner, hardworking, and interested in
+            developing creative and user-friendly digital solutions.
+            My goal is to build a successful career in the software
+            and technology field.
+          </p>
+        </div>
+
+        <div class="section education">
+          <h2>Education</h2>
+
+          <p>
+            <strong>B.Tech in Computer Science Engineering</strong><br>
+            Currently Pursuing – Second Year (SY)
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Technical Knowledge</h2>
+
+          <ul>
+            <li>Frontend Web Development</li>
+            <li>Responsive Website Design</li>
+            <li>Programming in C and C++</li>
+            <li>JavaScript Basics</li>
+            <li>Node.js Backend Basics</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer">
+      © 2026 Sejal Shivaji Kumbhar | Resume Website
+    </div>
+
+  </div>
 
 </body>
 </html>
