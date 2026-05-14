@@ -1,23 +1,142 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Application using XSLT</title>
 
-<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            padding:20px;
+        }
 
-<library>
-    <book>
-        <title>Java Programming</title>
-        <author>James Gosling</author>
-        <price>500</price>
-    </book>
+        .container{
+            max-width:900px;
+            margin:auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
 
-    <book>
-        <title>Web Development</title>
-        <author>John Smith</author>
-        <price>400</price>
-    </book>
+        h1{
+            text-align:center;
+            color:#2c3e50;
+        }
 
-    <book>
-        <title>Database Systems</title>
-        <author>Oracle Press</author>
-        <price>450</price>
-    </book>
-</library>
+        h2{
+            color:#2980b9;
+            margin-top:30px;
+        }
+
+        pre{
+            background:#272822;
+            color:white;
+            padding:15px;
+            border-radius:8px;
+            overflow-x:auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Application using XML and XSLT</h1>
+
+    <h2>Step 1: XML File (student.xml)</h2>
+
+    <pre>
+&lt;?xml version="1.0"?&gt;
+
+&lt;?xml-stylesheet type="text/xsl" href="student.xsl"?&gt;
+
+&lt;students&gt;
+
+    &lt;student&gt;
+        &lt;rollno&gt;101&lt;/rollno&gt;
+        &lt;name&gt;Sejal&lt;/name&gt;
+        &lt;branch&gt;CSE&lt;/branch&gt;
+        &lt;year&gt;SY&lt;/year&gt;
+    &lt;/student&gt;
+
+    &lt;student&gt;
+        &lt;rollno&gt;102&lt;/rollno&gt;
+        &lt;name&gt;Rahul&lt;/name&gt;
+        &lt;branch&gt;IT&lt;/branch&gt;
+        &lt;year&gt;TY&lt;/year&gt;
+    &lt;/student&gt;
+
+&lt;/students&gt;
+    </pre>
+
+    <h2>Step 2: XSLT File (student.xsl)</h2>
+
+    <pre>
+&lt;?xml version="1.0"?&gt;
+
+&lt;xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+&lt;xsl:template match="/"&gt;
+
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Student Information&lt;/h2&gt;
+
+&lt;table border="1" cellpadding="6"&gt;
+
+    &lt;tr bgcolor="lightblue"&gt;
+        &lt;th&gt;Roll No&lt;/th&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Branch&lt;/th&gt;
+        &lt;th&gt;Year&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;xsl:for-each select="students/student"&gt;
+
+    &lt;tr&gt;
+
+        &lt;td&gt;
+            &lt;xsl:value-of select="rollno"/&gt;
+        &lt;/td&gt;
+
+        &lt;td&gt;
+            &lt;xsl:value-of select="name"/&gt;
+        &lt;/td&gt;
+
+        &lt;td&gt;
+            &lt;xsl:value-of select="branch"/&gt;
+        &lt;/td&gt;
+
+        &lt;td&gt;
+            &lt;xsl:value-of select="year"/&gt;
+        &lt;/td&gt;
+
+    &lt;/tr&gt;
+
+    &lt;/xsl:for-each&gt;
+
+&lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;/xsl:template&gt;
+
+&lt;/xsl:stylesheet&gt;
+    </pre>
+
+    <h2>Output</h2>
+
+    <p>
+        The student information stored in XML will be displayed
+        in a formatted HTML table using XSLT transformation.
+    </p>
+
+</div>
+
+</body>
+</html>
