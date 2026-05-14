@@ -1,121 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sejal Kumbhar Resume</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background: #f4f4f4;
-        }
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
 
-        .container {
-            width: 70%;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px gray;
-        }
+    body{
+      background:#f4f7fb;
+      padding:40px;
+      color:#333;
+    }
 
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-        }
+    .resume{
+      max-width:900px;
+      margin:auto;
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    }
 
-        h2 {
-            background: #2c3e50;
-            color: white;
-            padding: 5px;
-        }
+    .header{
+      background:linear-gradient(135deg,#4a00e0,#8e2de2);
+      color:white;
+      padding:40px;
+      text-align:center;
+    }
 
-        p {
-            line-height: 1.6;
-        }
+    .header h1{
+      font-size:42px;
+      margin-bottom:10px;
+    }
 
-        ul {
-            margin-left: 20px;
-        }
+    .header p{
+      font-size:18px;
+      opacity:0.9;
+    }
 
-        .contact {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+    .content{
+      display:flex;
+      flex-wrap:wrap;
+    }
 
-        .highlight {
-            color: #2980b9;
-            font-weight: bold;
-        }
-    </style>
+    .left{
+      width:35%;
+      background:#f0f3ff;
+      padding:30px;
+    }
+
+    .right{
+      width:65%;
+      padding:30px;
+    }
+
+    h2{
+      color:#4a00e0;
+      margin-bottom:15px;
+      border-bottom:2px solid #4a00e0;
+      padding-bottom:5px;
+      font-size:22px;
+    }
+
+    .section{
+      margin-bottom:30px;
+    }
+
+    .contact p,
+    .skills li,
+    .about p,
+    .education p{
+      margin-bottom:10px;
+      line-height:1.6;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    .skills li{
+      margin-bottom:8px;
+    }
+
+    .tag{
+      display:inline-block;
+      background:#4a00e0;
+      color:white;
+      padding:8px 14px;
+      margin:5px;
+      border-radius:20px;
+      font-size:14px;
+    }
+
+    .footer{
+      text-align:center;
+      padding:20px;
+      background:#f7f7f7;
+      font-size:14px;
+      color:#666;
+    }
+
+    @media(max-width:768px){
+      .left,
+      .right{
+        width:100%;
+      }
+
+      .header h1{
+        font-size:32px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
+  <div class="resume">
 
-    <!-- Header -->
-    <h1>Your Name Here</h1>
-    <div class="contact">
-        <p>Email: your.email@example.com | Phone: 1234567890</p>
-        <p>Address: Your Address Here</p>
+    <div class="header">
+      <h1>Sejal Shivaji Kumbhar</h1>
+      <p>B.Tech Computer Science Engineering Student</p>
     </div>
 
-    <!-- Objective -->
-    <h2>Career Objective</h2>
-    <p>
-        To obtain a challenging position in a reputed organization where I can utilize my skills and knowledge for growth and development.
-    </p>
+    <div class="content">
 
-    <!-- Education -->
-    <h2>Education</h2>
-    <ul>
-        <li><span class="highlight">Degree:</span> BCA / BSc IT / Your Course</li>
-        <li><span class="highlight">College:</span> Your College Name</li>
-        <li><span class="highlight">Year:</span> 2023 - 2026</li>
-    </ul>
+      <!-- LEFT SECTION -->
+      <div class="left">
 
-    <!-- Skills -->
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>HTML, CSS</li>
-        <li>Java Programming</li>
-        <li>Database (MySQL)</li>
-        <li>Basic Web Development</li>
-    </ul>
+        <div class="section contact">
+          <h2>Contact</h2>
 
-    <!-- Project -->
-    <h2>Project</h2>
-    <p><span class="highlight">Project Title:</span> Nearby Mess Finder System</p>
-    <p>
-        Developed a web-based application to help students find nearby mess services. 
-        Includes features like search, menu display, and admin management.
-    </p>
+          <p><strong>Phone:</strong><br> 8432909494</p>
 
-    <!-- Strengths -->
-    <h2>Strengths</h2>
-    <ul>
-        <li>Good communication skills</li>
-        <li>Quick learner</li>
-        <li>Team player</li>
-    </ul>
+          <p><strong>Email:</strong><br>
+          sejalkumbhar9@gmail.com</p>
 
-    <!-- Personal Details -->
-    <h2>Personal Details</h2>
-    <p>Date of Birth: DD/MM/YYYY</p>
-    <p>Languages Known: English, Hindi, Marathi</p>
+          <p><strong>Location:</strong><br>
+          Maharashtra, India</p>
+        </div>
 
-    <!-- Declaration -->
-    <h2>Declaration</h2>
-    <p>
-        I hereby declare that the above information is true to the best of my knowledge.
-    </p>
+        <div class="section">
+          <h2>Skills</h2>
 
-    <br>
-    <p>Date: __________</p>
-    <p>Place: __________</p>
-    <p><b>Signature:</b> __________</p>
+          <div class="tag">HTML</div>
+          <div class="tag">CSS</div>
+          <div class="tag">JavaScript</div>
+          <div class="tag">C</div>
+          <div class="tag">C++</div>
+          <div class="tag">Node.js</div>
+        </div>
 
-</div>
+      </div>
+
+      <!-- RIGHT SECTION -->
+      <div class="right">
+
+        <div class="section about">
+          <h2>About Me</h2>
+
+          <p>
+            I am Sejal Shivaji Kumbhar, currently pursuing
+            Second Year B.Tech in Computer Science Engineering.
+            I am passionate about web development and programming.
+            I enjoy creating modern and responsive websites and
+            continuously learning new technologies to improve my
+            technical skills.
+          </p>
+
+          <p>
+            I am a quick learner, hardworking, and interested in
+            developing creative and user-friendly digital solutions.
+            My goal is to build a successful career in the software
+            and technology field.
+          </p>
+        </div>
+
+        <div class="section education">
+          <h2>Education</h2>
+
+          <p>
+            <strong>B.Tech in Computer Science Engineering</strong><br>
+            Currently Pursuing – Second Year (SY)
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Technical Knowledge</h2>
+
+          <ul>
+            <li>Frontend Web Development</li>
+            <li>Responsive Website Design</li>
+            <li>Programming in C and C++</li>
+            <li>JavaScript Basics</li>
+            <li>Node.js Backend Basics</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer">
+      © 2026 Sejal Shivaji Kumbhar | Resume Website
+    </div>
+
+  </div>
 
 </body>
 </html>
