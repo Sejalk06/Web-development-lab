@@ -1,28 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XSLT Transformation Example</title>
 
-<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            padding:20px;
+        }
 
-<!DOCTYPE students SYSTEM "student.dtd">
+        .container{
+            max-width:900px;
+            margin:auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
 
-<students>
-    <student>
-        <name>Sejal Kumbhar</name>
-        <roll>101</roll>
-        <course>BCA</course>
-        <city>Pune</city>
-    </student>
+        h1{
+            text-align:center;
+            color:#2c3e50;
+        }
 
-    <student>
-        <name>Rahul Patil</name>
-        <roll>102</roll>
-        <course>BSc IT</course>
-        <city>Kolhapur</city>
-    </student>
+        h2{
+            color:#2980b9;
+            margin-top:30px;
+        }
 
-    <student>
-        <name>Priya Sharma</name>
-        <roll>103</roll>
-        <course>BBA</course>
-        <city>Mumbai</city>
-    </student>
-</students>
+        pre{
+            background:#272822;
+            color:white;
+            padding:15px;
+            border-radius:8px;
+            overflow-x:auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>XSLT Transformation to XML</h1>
+
+    <p>
+        XSLT (Extensible Stylesheet Language Transformations)
+        is used to transform XML documents into another format
+        like HTML or another XML document.
+    </p>
+
+    <h2>XML File (student.xml)</h2>
+
+    <pre>
+&lt;?xml version="1.0"?&gt;
+
+&lt;students&gt;
+    &lt;student&gt;
+        &lt;name&gt;Sejal&lt;/name&gt;
+        &lt;branch&gt;CSE&lt;/branch&gt;
+        &lt;year&gt;SY&lt;/year&gt;
+    &lt;/student&gt;
+
+    &lt;student&gt;
+        &lt;name&gt;Rahul&lt;/name&gt;
+        &lt;branch&gt;IT&lt;/branch&gt;
+        &lt;year&gt;TY&lt;/year&gt;
+    &lt;/student&gt;
+&lt;/students&gt;
+    </pre>
+
+    <h2>XSLT File (student.xsl)</h2>
+
+    <pre>
+&lt;?xml version="1.0"?&gt;
+
+&lt;xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+&lt;xsl:template match="/"&gt;
+
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Student Information&lt;/h2&gt;
+
+&lt;table border="1" cellpadding="5"&gt;
+
+    &lt;tr bgcolor="lightblue"&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Branch&lt;/th&gt;
+        &lt;th&gt;Year&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;xsl:for-each select="students/student"&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;xsl:value-of select="name"/&gt;
+        &lt;/td&gt;
+
+        &lt;td&gt;
+            &lt;xsl:value-of select="branch"/&gt;
+        &lt;/td&gt;
+
+        &lt;td&gt;
+            &lt;xsl:value-of select="year"/&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;/xsl:for-each&gt;
+
+&lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;/xsl:template&gt;
+
+&lt;/xsl:stylesheet&gt;
+    </pre>
+
+    <h2>Output</h2>
+
+    <p>
+        The XML data will be transformed into an HTML table
+        using the XSLT stylesheet.
+    </p>
+
+</div>
+
+</body>
+</html>
