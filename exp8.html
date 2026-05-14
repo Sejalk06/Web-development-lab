@@ -1,100 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>HTML List Tags Example</title>
+    <meta charset="UTF-8">
+    <title>Employee Registration Form</title>
 
     <style>
         body {
-            font-family: Arial;
-            background: #f4f4f4;
-            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            margin: 0;
+            padding: 0;
         }
 
-        h1 {
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
             text-align: center;
-            color: #2c3e50;
+            margin-bottom: 20px;
         }
 
-        .box {
-            background: white;
-            padding: 20px;
-            margin: 15px 0;
-            box-shadow: 0 0 10px gray;
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .gender {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .gender input {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #45a049;
         }
     </style>
 </head>
 
 <body>
 
-<h1>Demonstration of HTML List Tags</h1>
+<div class="container">
+    <h2>Employee Registration Form</h2>
 
-<div class="box">
-    <h3>1. Ordered List (Numbered List)</h3>
-    <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Java</li>
-    </ol>
-</div>
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
 
-<div class="box">
-    <h3>2. Ordered List with Type Attribute</h3>
-    <ol type="A">
-        <li>Apple</li>
-        <li>Banana</li>
-        <li>Mango</li>
-    </ol>
-</div>
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
 
-<div class="box">
-    <h3>3. Unordered List (Bulleted List)</h3>
-    <ul>
-        <li>Cricket</li>
-        <li>Football</li>
-        <li>Hockey</li>
-    </ul>
-</div>
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" required>
 
-<div class="box">
-    <h3>4. Unordered List with Style</h3>
-    <ul type="square">
-        <li>Red</li>
-        <li>Green</li>
-        <li>Blue</li>
-    </ul>
-</div>
+        <label>Department</label>
+        <select required>
+            <option value="">Select Department</option>
+            <option>HR</option>
+            <option>IT</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+        </select>
 
-<div class="box">
-    <h3>5. Description List</h3>
-    <dl>
-        <dt>HTML</dt>
-        <dd>HyperText Markup Language</dd>
+        <label>Gender</label>
+        <div class="gender">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+        </div>
 
-        <dt>CSS</dt>
-        <dd>Cascading Style Sheets</dd>
+        <label>Date of Joining</label>
+        <input type="date" required>
 
-        <dt>JavaScript</dt>
-        <dd>Used for interactivity</dd>
-    </dl>
-</div>
+        <label>Address</label>
+        <textarea rows="3" placeholder="Enter address"></textarea>
 
-<div class="box">
-    <h3>6. Nested List</h3>
-    <ul>
-        <li>Programming Languages
-            <ol>
-                <li>Java</li>
-                <li>Python</li>
-            </ol>
-        </li>
-        <li>Web Technologies
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-        </li>
-    </ul>
+        <button type="submit">Submit</button>
+    </form>
 </div>
 
 </body>
