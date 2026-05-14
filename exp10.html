@@ -1,217 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sejal Kumbhar Resume</title>
+    <title>Study of XML</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            margin:0;
+            padding:20px;
+        }
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, sans-serif;
-    }
+        .container{
+            max-width:900px;
+            margin:auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
 
-    body{
-      background:#f4f7fb;
-      padding:40px;
-      color:#333;
-    }
+        h1{
+            color:#2c3e50;
+            text-align:center;
+        }
 
-    .resume{
-      max-width:900px;
-      margin:auto;
-      background:white;
-      border-radius:15px;
-      overflow:hidden;
-      box-shadow:0 5px 20px rgba(0,0,0,0.1);
-    }
+        h2{
+            color:#2980b9;
+            margin-top:25px;
+        }
 
-    .header{
-      background:linear-gradient(135deg,#4a00e0,#8e2de2);
-      color:white;
-      padding:40px;
-      text-align:center;
-    }
+        p{
+            line-height:1.7;
+        }
 
-    .header h1{
-      font-size:42px;
-      margin-bottom:10px;
-    }
+        pre{
+            background:#272822;
+            color:white;
+            padding:15px;
+            border-radius:8px;
+            overflow-x:auto;
+        }
 
-    .header p{
-      font-size:18px;
-      opacity:0.9;
-    }
-
-    .content{
-      display:flex;
-      flex-wrap:wrap;
-    }
-
-    .left{
-      width:35%;
-      background:#f0f3ff;
-      padding:30px;
-    }
-
-    .right{
-      width:65%;
-      padding:30px;
-    }
-
-    h2{
-      color:#4a00e0;
-      margin-bottom:15px;
-      border-bottom:2px solid #4a00e0;
-      padding-bottom:5px;
-      font-size:22px;
-    }
-
-    .section{
-      margin-bottom:30px;
-    }
-
-    .contact p,
-    .skills li,
-    .about p,
-    .education p{
-      margin-bottom:10px;
-      line-height:1.6;
-    }
-
-    ul{
-      padding-left:20px;
-    }
-
-    .skills li{
-      margin-bottom:8px;
-    }
-
-    .tag{
-      display:inline-block;
-      background:#4a00e0;
-      color:white;
-      padding:8px 14px;
-      margin:5px;
-      border-radius:20px;
-      font-size:14px;
-    }
-
-    .footer{
-      text-align:center;
-      padding:20px;
-      background:#f7f7f7;
-      font-size:14px;
-      color:#666;
-    }
-
-    @media(max-width:768px){
-      .left,
-      .right{
-        width:100%;
-      }
-
-      .header h1{
-        font-size:32px;
-      }
-    }
-  </style>
+        ul{
+            line-height:1.8;
+        }
+    </style>
 </head>
 
 <body>
 
-  <div class="resume">
+<div class="container">
 
-    <div class="header">
-      <h1>Sejal Shivaji Kumbhar</h1>
-      <p>B.Tech Computer Science Engineering Student</p>
-    </div>
+    <h1>Study of XML</h1>
 
-    <div class="content">
+    <h2>What is XML?</h2>
 
-      <!-- LEFT SECTION -->
-      <div class="left">
+    <p>
+        XML stands for Extensible Markup Language.
+        It is used to store and transport data.
+        XML is self-descriptive and designed to carry data,
+        not to display data.
+    </p>
 
-        <div class="section contact">
-          <h2>Contact</h2>
+    <h2>Features of XML</h2>
 
-          <p><strong>Phone:</strong><br> 8432909494</p>
+    <ul>
+        <li>Easy to understand</li>
+        <li>Platform independent</li>
+        <li>Stores and transports data</li>
+        <li>User-defined tags</li>
+        <li>Readable by both humans and machines</li>
+    </ul>
 
-          <p><strong>Email:</strong><br>
-          sejalkumbhar9@gmail.com</p>
+    <h2>Advantages of XML</h2>
 
-          <p><strong>Location:</strong><br>
-          Maharashtra, India</p>
-        </div>
+    <ul>
+        <li>Simple data sharing</li>
+        <li>Supports different applications</li>
+        <li>Easy data transfer over internet</li>
+        <li>Flexible structure</li>
+    </ul>
 
-        <div class="section">
-          <h2>Skills</h2>
+    <h2>Sample XML Code</h2>
 
-          <div class="tag">HTML</div>
-          <div class="tag">CSS</div>
-          <div class="tag">JavaScript</div>
-          <div class="tag">C</div>
-          <div class="tag">C++</div>
-          <div class="tag">Node.js</div>
-        </div>
+    <pre>
+&lt;?xml version="1.0"?&gt;
 
-      </div>
+&lt;student&gt;
+    &lt;name&gt;Sejal&lt;/name&gt;
+    &lt;branch&gt;CSE&lt;/branch&gt;
+    &lt;year&gt;Second Year&lt;/year&gt;
+&lt;/student&gt;
+    </pre>
 
-      <!-- RIGHT SECTION -->
-      <div class="right">
+    <h2>Applications of XML</h2>
 
-        <div class="section about">
-          <h2>About Me</h2>
+    <ul>
+        <li>Web services</li>
+        <li>Data storage</li>
+        <li>Configuration files</li>
+        <li>Information sharing</li>
+    </ul>
 
-          <p>
-            I am Sejal Shivaji Kumbhar, currently pursuing
-            Second Year B.Tech in Computer Science Engineering.
-            I am passionate about web development and programming.
-            I enjoy creating modern and responsive websites and
-            continuously learning new technologies to improve my
-            technical skills.
-          </p>
+    <h2>Conclusion</h2>
 
-          <p>
-            I am a quick learner, hardworking, and interested in
-            developing creative and user-friendly digital solutions.
-            My goal is to build a successful career in the software
-            and technology field.
-          </p>
-        </div>
+    <p>
+        XML is an important markup language used for storing,
+        transporting, and organizing data efficiently between systems.
+    </p>
 
-        <div class="section education">
-          <h2>Education</h2>
-
-          <p>
-            <strong>B.Tech in Computer Science Engineering</strong><br>
-            Currently Pursuing – Second Year (SY)
-          </p>
-        </div>
-
-        <div class="section">
-          <h2>Technical Knowledge</h2>
-
-          <ul>
-            <li>Frontend Web Development</li>
-            <li>Responsive Website Design</li>
-            <li>Programming in C and C++</li>
-            <li>JavaScript Basics</li>
-            <li>Node.js Backend Basics</li>
-          </ul>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="footer">
-      © 2026 Sejal Shivaji Kumbhar | Resume Website
-    </div>
-
-  </div>
+</div>
 
 </body>
 </html>
