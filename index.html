@@ -2,109 +2,84 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Web Development Lab Portal</title>
+<title>Web Dev Lab Portfolio</title>
 
 <style>
+    body{
+        font-family: Arial, sans-serif;
+        margin:0;
+        background:#0f172a;
+        color:white;
+    }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+    header{
+        text-align:center;
+        padding:25px;
+        background:linear-gradient(135deg,#4f46e5,#9333ea);
+    }
 
-body{
-    min-height:100vh;
-    background:linear-gradient(135deg,#0f172a,#1d4ed8,#7c3aed,#06b6d4);
-    background-size:400% 400%;
-    animation:bg 10s infinite alternate;
-    color:white;
-}
+    header h1{
+        margin:0;
+        font-size:32px;
+    }
 
-@keyframes bg{
-    0%{background-position:left;}
-    100%{background-position:right;}
-}
+    .container{
+        display:flex;
+        flex-wrap:wrap;
+        padding:20px;
+    }
 
-header{
-    text-align:center;
-    padding:40px 20px;
-}
+    /* Sidebar */
+    .sidebar{
+        width:25%;
+        min-width:250px;
+        background:#111827;
+        padding:15px;
+        border-radius:10px;
+        height:85vh;
+        overflow-y:auto;
+    }
 
-header h1{
-    font-size:50px;
-    color:#fff;
-    text-shadow:0 0 20px #38bdf8;
-}
+    .sidebar button{
+        width:100%;
+        margin:5px 0;
+        padding:10px;
+        background:#1f2937;
+        color:white;
+        border:none;
+        cursor:pointer;
+        border-radius:6px;
+        transition:0.3s;
+        text-align:left;
+    }
 
-header p{
-    margin-top:10px;
-    font-size:20px;
-    color:#e2e8f0;
-}
+    .sidebar button:hover{
+        background:#4f46e5;
+    }
 
-.container{
-    width:90%;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    padding-bottom:50px;
-}
+    /* Content */
+    .content{
+        flex:1;
+        margin-left:20px;
+        background:#1e293b;
+        padding:20px;
+        border-radius:10px;
+        min-height:85vh;
+    }
 
-.card{
-    background:rgba(255,255,255,0.12);
-    backdrop-filter:blur(10px);
-    border-radius:20px;
-    padding:30px;
-    text-align:center;
-    transition:0.4s;
-    border:1px solid rgba(255,255,255,0.1);
-    box-shadow:0 0 20px rgba(0,0,0,0.3);
-}
+    iframe{
+        width:100%;
+        height:75vh;
+        border:none;
+        border-radius:10px;
+        background:white;
+    }
 
-.card:hover{
-    transform:translateY(-10px) scale(1.03);
-    box-shadow:0 0 25px #38bdf8;
-}
-
-.card h2{
-    margin-bottom:15px;
-    font-size:24px;
-    color:#fff;
-}
-
-.card p{
-    color:#e2e8f0;
-    margin-bottom:20px;
-    line-height:1.6;
-}
-
-.btn{
-    display:inline-block;
-    text-decoration:none;
-    color:white;
-    background:linear-gradient(45deg,#2563eb,#06b6d4);
-    padding:12px 25px;
-    border-radius:30px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:linear-gradient(45deg,#06b6d4,#2563eb);
-    transform:scale(1.05);
-}
-
-footer{
-    text-align:center;
-    padding:20px;
-    background:rgba(255,255,255,0.08);
-    color:#e2e8f0;
-    margin-top:20px;
-}
+    .title{
+        font-size:20px;
+        margin-bottom:10px;
+        color:#38bdf8;
+    }
 
 </style>
 </head>
@@ -112,101 +87,46 @@ footer{
 <body>
 
 <header>
-    <h1>🌐 WEB DEVELOPMENT LAB PORTAL</h1>
-    <p>Interactive HTML • XML • XSLT Experiments</p>
+    <h1>Web Development Lab Portfolio</h1>
+    <p>Sejal Shivaji Kumbhar - CSE SY</p>
 </header>
 
 <div class="container">
 
-    <div class="card">
-        <h2>📘 Experiment 1</h2>
-        <p>Study of Web Technology Basics</p>
-        <a href="exp1.html" class="btn">Open</a>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <button onclick="loadExp('exp1.html','Experiment 1 - study of web technology basic)">Experiment 1 study of web technology basics-</button>
+        <button onclick="loadExp('exp2.html','Experiment 2 - Create a static web page')">Experiment 2 - create a static web page</button>
+        <button onclick="loadExp('exp3.html','Experiment 3 - use of list tags in html)">Experiment 3 -use of list tags in html</button>
+        <button onclick="loadExp('exp4.html','Experiment 4 - insert images using html')">Experiment 4 - insert images using html</button>
+        <button onclick="loadExp('exp5.html','Experiment 5 - create frames using html')">Experiment 5 - create frames using html</button>
+        <button onclick="loadExp('exp6.html','Experiment 6 - demonstrate link tags in html)">Experiment 6 -demonstrate link tags in html</button>
+        <button onclick="loadExp('exp7.html','Experiment 7 - demonstrate list tags in html)">Experiment 7 - demonstrate list tags in html</button>
+        <button onclick="loadExp('exp8.html','Experiment 8 - employee registration form)">Experiment 8 - employee registration form</button>
+        <button onclick="loadExp('exp9.html','Experiment 9 - resume webpage using html')">Experiment 9 - resume webpage using html</button>
+        <button onclick="loadExp('exp10.html','Experiment 10 - study and implementation of xml)">Experiment 10 -study and implementation of xml</button>
+        <button onclick="loadExp('exp11.html','Experiment 11 -XSLT transformation into XML)">Experiment 11 - XSLT transformation into XML</button>
+        <button onclick="loadExp('exp12.html','Experiment 12 -Student application using XSLT)">Experiment 12 -Student application using XSLT</button>
+        <button onclick="loadExp('exp13.html','Experiment 13 - XSLT with conditional statement)">Experiment 13 - XSLT with conditional statement</button>
+        <button onclick="loadExp('exp1.html','Experiment 1 - open main homepage of project)">Experiment 14 -open main homepage of project</button>
     </div>
 
-    <div class="card">
-        <h2>🌍 Experiment 2</h2>
-        <p>Create Static Web Pages using HTML</p>
-        <a href="exp2.html" class="btn">Open</a>
-    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <div class="title" id="title">Select an Experiment</div>
 
-    <div class="card">
-        <h2>📋 Experiment 3</h2>
-        <p>Use of List Tags in HTML</p>
-        <a href="exp3.html" class="btn">Open</a>
-    </div>
-
-    <div class="card">
-        <h2>🖼️ Experiment 4</h2>
-        <p>Insert Images using HTML Tags</p>
-        <a href="exp4.html" class="btn">Open</a>
-    </div>
-
-    <div class="card">
-        <h2>🧩 Experiment 5</h2>
-        <p>Create Frames using HTML</p>
-        <a href="exp5.html" class="btn">Open</a>
-    </div>
-
-    <div class="card">
-        <h2>🔗 Experiment 6</h2>
-        <p>Demonstrate Link Tags in HTML</p>
-        <a href="exp6.html" class="btn">Open</a>
-    </div>
-
-    <div class="card">
-        <h2>📑 Experiment 7</h2>
-        <p>Demonstrate List Tags in HTML</p>
-        <a href="exp7.html" class="btn">Open</a>
-    </div>
-
-    <div class="card">
-        <h2>📝 Experiment 8</h2>
-        <p>Employee Registration Form</p>
-        <a href="exp8.html" class="btn">Open</a>
-    </div>
-
-    <div class="card">
-        <h2>👨‍💼 Experiment 9</h2>
-        <p>Resume Webpage using HTML</p>
-        <a href="exp9.html" class="btn">Open</a>
-    </div>
-
-    <div class="card">
-        <h2>📂 Experiment 10</h2>
-        <p>Study and Implementation of XML</p>
-        <a href="exp10.html" class="btn">Open</a>
-    </div>
-
-    <div class="card">
-        <h2>⚡ Experiment 11</h2>
-        <p>XSLT Transformation of XML</p>
-        <a href="exp11.html" class="btn">Open</a>
-    </div>
-
-    <div class="card">
-        <h2>🎓 Experiment 12</h2>
-        <p>Student Application using XSLT</p>
-        <a href="exp12.html" class="btn">Open</a>
-    </div>
-
-    <div class="card">
-        <h2>🚀 Experiment 13</h2>
-        <p>XSLT with Conditional Statement</p>
-        <a href="exp13.html" class="btn">Open</a>
-    </div>
-
-    <div class="card">
-        <h2>🏠 Main Index File</h2>
-        <p>Open Main Homepage of Project</p>
-        <a href="index.html" class="btn">Open</a>
+        <iframe id="frame" src=""></iframe>
     </div>
 
 </div>
 
-<footer>
-    Developed by Sejal Kumbhar | Web Development Lab Project
-</footer>
+<script>
+    function loadExp(page, title){
+        document.getElementById("frame").src = page;
+        document.getElementById("title").innerText = title;
+    }
+</script>
 
 </body>
 </html>
